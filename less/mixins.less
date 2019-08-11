@@ -1,39 +1,89 @@
-// Buttons
+// ============= VARIABLES =============
 
+// COLORS:
+@monza: #e50914;
+@cod-gray: #141414;
+@mine-shaft: #3d3d3d;
+@dark-mine-shaft: #222222;
+@dusty-gray: #999999;
+
+// ============= MIXINS =============
+
+.test {
+	background-color: red;
+}
+
+// ----- GENERAL STYLES -----
+
+.center-content {
+	justify-content: center;
+	align-items: center;
+}
+
+// ----- BUTTON STYLES -----
+
+// Button Defaults
 .default-btn {
-    display: inline-block;
-    background: @monza;
-    color: white;
-    padding: 0.4rem 1.3rem;
-    font-size: 1rem;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    margin-right: 0.5rem;
-    outline: none;
-    box-shadow: 0 1px 0 rgba(0,0,0 0.45);
-    border-radius: 2px;
+	display: inline-block;
+	background: @monza;
+	color: white;
+	padding: 0.4rem 1.3rem;
+	font-size: 1rem;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	margin-right: 0.5rem;
+	outline: none;
+	box-shadow: 0 1px 0 rgba(0, 0, 0 0.45);
+	border-radius: 2px;
 
-    &:hover {
-        opacity: 0.9;
-    }
+	&:hover {
+		opacity: 0.9;
+	}
 }
 
+// Rounded button
 .default-btn-rounded {
-    .default-btn;
-    border-radius: 5px;
+	.default-btn;
+	border-radius: 5px;
 }
 
+// Large button
 .default-btn-lg {
-    .default-btn;
-    font-size: 1rem;
-    padding: 0.8rem 1.3rem;
-    text-transform: uppercase;
+	.default-btn;
+	font-size: 1rem;
+	padding: 0.8rem 1.3rem;
+	text-transform: uppercase;
 }
 
+// X-Large button
 .default-btn-xl {
-    .default-btn;
-    font-size: 2rem;
-    padding: 1.5rem 2.1rem;
-    text-transform: uppercase;
+	.default-btn;
+	font-size: 2rem;
+	padding: 1.5rem 2.1rem;
+	text-transform: uppercase;
+}
+
+// ----- TEXT STYLES -----
+.default-text-xl {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.default-text-lg {
+	font-size: 1.7rem;
+	margin-bottom: 1rem;
+}
+
+.default-text-md {
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+}
+
+.default-text-center {
+	text-align: center;
+}
+
+.default-text-dark {
+	color: @dusty-gray;
 }

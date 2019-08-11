@@ -97,6 +97,9 @@ img {
 .btn-lg:hover {
   opacity: 0.9;
 }
+.btn-icon {
+  margin-left: 1rem;
+}
 .text-xl {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -369,6 +372,14 @@ img {
   padding: 3rem 0;
   background: black;
   color: white;
+}
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+.show {
+  display: block !important;
 }
 #tab-1-content .tab-1-content-inner {
   display: grid;

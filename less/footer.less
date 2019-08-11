@@ -1,0 +1,30 @@
+// ============= FOOTER STYLES =============
+
+.footer {
+	max-width: 75%;
+	margin: 1rem auto;
+	overflow: auto;
+
+	a {
+		color: @dusty-gray;
+		font-size: 0.9rem;
+	}
+
+	p {
+		margin-bottom: 1.5rem;
+	}
+
+	.footer-cols {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 2rem;
+
+		li {
+			line-height: 1.9;
+		}
+
+		@media @mobile-960 {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}

@@ -8,7 +8,8 @@
 @dusty-gray: #999999;
 
 // ----- ESCAPED VALUES -----
-@mobile: ~'(max-width: 960px)';
+@mobile-960: ~'(max-width: 960px)';
+@mobile-700: ~'(max-width:700px)';
 
 // ============= MIXINS =============
 
@@ -66,7 +67,7 @@
 	padding: 1.5rem 2.1rem;
 	text-transform: uppercase;
 
-	@media @mobile {
+	@media @mobile-960 {
 		font-size: 1.5rem;
 		padding: 1.4rem 2rem;
 	}
@@ -77,7 +78,7 @@
 	font-size: 2rem;
 	margin-bottom: 1rem;
 
-	@media @mobile {
+	@media @mobile-960 {
 		font-size: 1.5rem;
 	}
 }
@@ -86,7 +87,7 @@
 	font-size: 1.7rem;
 	margin-bottom: 1rem;
 
-	@media @mobile {
+	@media @mobile-960 {
 		font-size: 1.3rem;
 	}
 }
@@ -95,7 +96,7 @@
 	font-size: 1.2rem;
 	margin-bottom: 1rem;
 
-	@media @mobile {
+	@media @mobile-960 {
 		font-size: 1rem;
 	}
 }

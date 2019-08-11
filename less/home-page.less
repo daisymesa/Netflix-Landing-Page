@@ -6,6 +6,10 @@
 	position: relative;
 	background: url('../img/background.jpg') no-repeat center center/cover;
 
+	// @media @mobile {
+	// 	height: 70vh;
+	// }
+
 	&::after {
 		content: '';
 		position: absolute;
@@ -29,6 +33,12 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%);
+
+			@media @mobile {
+				top: 30%;
+				left: 5%;
+				transform: translate(0);
+			}
 		}
 
 		a {
@@ -54,6 +64,11 @@
 			font-size: 5.2rem;
 			line-height: 1.1;
 			margin: 0 0 2rem;
+
+			@media @mobile {
+				font-size: 3.7rem;
+				line-height: 1;
+			}
 		}
 
 		p {
@@ -63,6 +78,10 @@
 			font-size: 1.9rem;
 			line-height: 1.25;
 			margin: 0 0 2rem;
+
+			@media @mobile {
+				font-size: 1.5rem;
+			}
 		}
 	}
 }
@@ -80,6 +99,12 @@
 		grid-gap: 1rem;
 		.center-content;
 		text-align: center;
+	}
+
+	.hide-sm {
+		@media @mobile {
+			display: none;
+		}
 	}
 
 	p {
@@ -195,6 +220,10 @@
 
 		li {
 			line-height: 1.9;
+		}
+
+		@media @mobile {
+			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 }

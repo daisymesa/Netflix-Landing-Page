@@ -1,11 +1,14 @@
 // ============= VARIABLES =============
 
-// COLORS:
+// ----- COLORS -----
 @monza: #e50914;
 @cod-gray: #141414;
 @mine-shaft: #3d3d3d;
 @dark-mine-shaft: #222222;
 @dusty-gray: #999999;
+
+// ----- ESCAPED VALUES -----
+@mobile: ~'(max-width: 960px)';
 
 // ============= MIXINS =============
 
@@ -62,22 +65,39 @@
 	font-size: 2rem;
 	padding: 1.5rem 2.1rem;
 	text-transform: uppercase;
+
+	@media @mobile {
+		font-size: 1.5rem;
+		padding: 1.4rem 2rem;
+	}
 }
 
 // ----- TEXT STYLES -----
 .default-text-xl {
 	font-size: 2rem;
 	margin-bottom: 1rem;
+
+	@media @mobile {
+		font-size: 1.5rem;
+	}
 }
 
 .default-text-lg {
 	font-size: 1.7rem;
 	margin-bottom: 1rem;
+
+	@media @mobile {
+		font-size: 1.3rem;
+	}
 }
 
 .default-text-md {
 	font-size: 1.2rem;
 	margin-bottom: 1rem;
+
+	@media @mobile {
+		font-size: 1rem;
+	}
 }
 
 .default-text-center {

@@ -72,6 +72,12 @@ img {
 .btn-xl:hover {
   opacity: 0.9;
 }
+@media (max-width: 960px) {
+  .btn-xl {
+    font-size: 1.5rem;
+    padding: 1.4rem 2rem;
+  }
+}
 .btn-lg {
   display: inline-block;
   background: #e50914;
@@ -95,13 +101,28 @@ img {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+@media (max-width: 960px) {
+  .text-xl {
+    font-size: 1.5rem;
+  }
+}
 .text-lg {
   font-size: 1.7rem;
   margin-bottom: 1rem;
 }
+@media (max-width: 960px) {
+  .text-lg {
+    font-size: 1.3rem;
+  }
+}
 .text-md {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+}
+@media (max-width: 960px) {
+  .text-md {
+    font-size: 1rem;
+  }
 }
 .text-dark {
   color: #999999;
@@ -190,17 +211,38 @@ img {
 .default-btn-xl:hover {
   opacity: 0.9;
 }
+@media (max-width: 960px) {
+  .default-btn-xl {
+    font-size: 1.5rem;
+    padding: 1.4rem 2rem;
+  }
+}
 .default-text-xl {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+@media (max-width: 960px) {
+  .default-text-xl {
+    font-size: 1.5rem;
+  }
 }
 .default-text-lg {
   font-size: 1.7rem;
   margin-bottom: 1rem;
 }
+@media (max-width: 960px) {
+  .default-text-lg {
+    font-size: 1.3rem;
+  }
+}
 .default-text-md {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+}
+@media (max-width: 960px) {
+  .default-text-md {
+    font-size: 1rem;
+  }
 }
 .default-text-center {
   text-align: center;
@@ -237,6 +279,13 @@ img {
   left: 50%;
   transform: translate(-50%);
 }
+@media (max-width: 960px) {
+  .showcase .showcase-top img {
+    top: 30%;
+    left: 5%;
+    transform: translate(0);
+  }
+}
 .showcase .showcase-top a {
   position: absolute;
   top: 50%;
@@ -260,6 +309,12 @@ img {
   line-height: 1.1;
   margin: 0 0 2rem;
 }
+@media (max-width: 960px) {
+  .showcase .showcase-content h1 {
+    font-size: 3.7rem;
+    line-height: 1;
+  }
+}
 .showcase .showcase-content p {
   text-transform: uppercase;
   color: white;
@@ -267,6 +322,11 @@ img {
   font-size: 1.9rem;
   line-height: 1.25;
   margin: 0 0 2rem;
+}
+@media (max-width: 960px) {
+  .showcase .showcase-content p {
+    font-size: 1.5rem;
+  }
 }
 .tabs {
   background: #141414;
@@ -280,6 +340,11 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+@media (max-width: 960px) {
+  .tabs .hide-sm {
+    display: none;
+  }
 }
 .tabs p {
   font-size: 1.2rem;
@@ -368,4 +433,9 @@ img {
 }
 .footer .footer-cols li {
   line-height: 1.9;
+}
+@media (max-width: 960px) {
+  .footer .footer-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

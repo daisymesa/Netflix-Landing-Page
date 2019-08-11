@@ -1,37 +1,71 @@
-// :root {
-//     --primary-color: #E50914;
-// }
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    background: #000;
-    color: #999;
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background: black;
+	color: @dusty-gray;
 }
 
 ul {
-    list-style: none;
+	list-style: none;
 }
 
-h1, h2, h3, h4 {
-    color: #fff;
+h1,
+h2,
+h3,
+h4 {
+	color: white;
 }
 
 a {
-    color: #fff;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 p {
-    margin: 0.5rem 0;
+	margin: 0.5rem 0;
 }
 
 img {
-    width: 100%;
+	width: 100%;
+}
+
+.container {
+	max-width: 70%;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 2rem;
+}
+
+.btn-rounded {
+	.default-btn-rounded;
+}
+
+.btn-xl {
+	.default-btn-xl;
+}
+
+.btn-lg {
+	.default-btn-lg;
+}
+
+.text-xl {
+	.default-text-xl;
+}
+
+.text-lg {
+	.default-text-lg;
+}
+
+.text-md {
+	.default-text-md;
+}
+
+.text-dark {
+	.default-text-dark;
 }

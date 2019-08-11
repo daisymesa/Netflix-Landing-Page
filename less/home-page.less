@@ -139,3 +139,35 @@
 		}
 	}
 }
+
+// ============= TABLE STYLES =============
+
+.table {
+	width: 100%;
+	margin-top: 2rem;
+	border-collapse: collapse;
+	border-spacing: 0;
+
+	thead {
+		th {
+			text-transform: uppercase;
+			padding: 0.8rem;
+		}
+	}
+
+	tbody {
+		tr,
+		td {
+			color: @dusty-gray;
+			padding: 0.8rem 1.2rem;
+			text-align: center;
+
+			:first-child {
+				text-align: left;
+			}
+		}
+		tr:nth-child(odd) {
+			background-color: @dark-mine-shaft;
+		}
+	}
+}
